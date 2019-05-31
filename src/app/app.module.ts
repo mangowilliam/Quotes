@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { QuotesformComponent } from './quotesform/quotesform.component';
@@ -14,7 +15,9 @@ import { QuotesDetailsComponent } from './quotes-details/quotes-details.componen
     QuotesDetailsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
