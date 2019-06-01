@@ -8,6 +8,9 @@ import { Quotes } from '../quotes';
 
 })
 export class QuotesDetailsComponent implements OnInit {
+  quotesDelete(complete: boolean) {
+    this.isComplete.emit(complete);
+  }
 
   @Input() quotes: Quotes;
   @Output() isComplete = new EventEmitter<boolean>();

@@ -2,9 +2,9 @@
 <div class="container">
   <app-quotesform></app-quotesform>
   <ul>
-    <div *ngFor='let quotes of quotes'>
+    <div *ngFor='let quotes of quotes; let i = index'>
       <li>{{quotes.quote}} by {{quotes.author}} on {{quotes.Date|date}}</li>
-      <app-quotes-details [quotes]='quotes'></app-quotes-details>
+      <app-quotes-details [quotes]='quotes' (isComplete)='deletequotes($event,i)'></app-quotes-details>
 
     </div>
   </ul>
