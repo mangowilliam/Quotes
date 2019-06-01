@@ -1,6 +1,10 @@
-<h1>quotes</h1>
+<h1>Quotes</h1>
 <div class="container">
-  <div class="row">
-    <app-quotesform></app-quotesform>
-  </div>
+  <ul>
+    <div *ngFor='let quotes of quotes'>
+      <li>{{quotes.quote}}</li>
+      <app-quotes-details [quotes]='quotes'></app-quotes-details>
+    </div>
+  </ul>
+  <app-quotesform></app-quotesform>
 </div>
