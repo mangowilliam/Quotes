@@ -1,5 +1,6 @@
 <h1>Quotes</h1>
 <div class="container">
+  <app-quotesform></app-quotesform>
   <ul>
     <div *ngFor='let quotes of quotes'>
       <li>{{quotes.quote}} by {{quotes.author}} on {{quotes.Date|date}}</li>
@@ -7,5 +8,5 @@
 
     </div>
   </ul>
-  <app-quotesform></app-quotesform>
+
 </div>
