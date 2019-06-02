@@ -1,16 +1,28 @@
 <div class="container-fluid">
   <div class="row">
-    <form (ngSubmit)="submitquotes()" #quotesForm="ngForm">
-      <div class="form-group">
+    <form #quotesForm="ngForm" (ngSubmit)="submitquotes()">
+      <div class=" form-group">
         <label for="quote">Quote</label>
-        <input type="text" class="form-control" id="quote" [(ngModel)]="newquotes.quote" name="quote" #quote="ngModel" required>
+        <input type="text" class="form-control" id="quote" [(ngModel)]="newquotes.quote" name="quote" required #quote="ngModel" #spy>
       </div>
       <div class="form-group">
 
         <label for="author">Author</label>
         <input type="text" class="form-control" id="author" [(ngModel)]="newquotes.author" name="author" #author="ngModel" required>
       </div>
-      <button type="submit" class="btn btn-success" [disabled]="!quotesForm.form.valid">ADD</button>
+      <div class="form-group">
+
+        <label for="quoter">Quoter</label>
+        <input type="text" class="form-control" id="quoter" [(ngModel)]="newquotes.quoter" name="quoter" #quote="ngModel">
+      </div>
+      <div class="form-group">
+
+        <label for="Date"> date created</label>
+        <input type='date' required class="form-control" id="Date" [(ngModel)]="newquotes.Date" name="Date" #Date="ngModel">
+      </div>
+      <button type="submit" class="btn btn-success" [disabled]="!quotesForm.form.valid">ADD QUOTE</button>
+      &nbsp;
+      <button type="button" class="btn btn-default" (click)="quotesForm.reset()">reset</button>
     </form>
   </div>
 </div>

@@ -13,10 +13,12 @@ export class QuotesComponent implements OnInit {
   ]
   addNewquotes(quotes) {
     let quotesLength = this.quotes.length;
+    quotes.id = quotesLength + 1;
     quotes.Date = new Date(quotes.Date)
     this.quotes.push(quotes)
 
   }
+
   deletequotes(isComplete, index) {
     if (isComplete) {
       let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].quote}`)

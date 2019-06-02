@@ -1,10 +1,10 @@
 <h1>Quotes</h1>
 <div class="container">
+  <app-quotesform (addquotes)="addNewquotes($event)"></app-quotesform><br>
   <ul>
     <div *ngFor='let quotes of quotes; let i = index'>
       <li>{{quotes.quote}} by {{quotes.author}} on {{quotes.Date|date}}</li>
       <app-quotes-details [quotes]='quotes' (isComplete)='deletequotes($event,i)'></app-quotes-details>
     </div>
   </ul>
-  <app-quotesform (addquotes)="addNewquotes($event)"></app-quotesform>
 </div>
