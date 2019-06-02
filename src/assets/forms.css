@@ -54,6 +54,15 @@ h5 {
   color: white;
 }
 
+.footer {
+  text-align: center;
+}
+
+.footer img {
+  width: 20px;
+  height: 20px;
+}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;

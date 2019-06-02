@@ -4,6 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 #### _Version 1.0_ made on _31st of May 2019_
 
+by mango william
+
 ## Description
 
 The project is to create an application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational
@@ -50,4 +52,3 @@ So far no identified bugs but if you get any contact me on 0702658317
 
 1.  angular6.1.
 2.  CSS
-        

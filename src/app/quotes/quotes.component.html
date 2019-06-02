@@ -5,9 +5,9 @@
     <h5>{{quotes.quote}} by {{quotes.author}} on {{quotes.Date|date}}</h5>
     <button id="details" class="btn btn-info" (click)='toogleDetails(i)'>view details</button>
     <app-quotes-details *ngIf="quotes.showDescription" [quotes]='quotes' (isComplete)='deletequotes($event,i)'></app-quotes-details>
-  </div>
+  </div><br>
   <div class="footer">
     Copyright (c) 2019, mango
-    <a href="git.png" id="git" class="">
+    <a href="https://github.com/mangowilliam"><img src="./assets/icon.jpg"></a>
   </div>
 </div>
