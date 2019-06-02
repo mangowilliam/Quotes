@@ -11,6 +11,9 @@ export class QuotesComponent implements OnInit {
     new Quotes(1, 'The Way Get Started Is To Quit Talking And Begin Doing.', ' Walt Disney', "mango J", new Date(3, 30, 2019)),
     new Quotes(2, 'Don’t Let Yesterday Take Up Too Much Of Today.', 'Will Rodgers', "Junior M", new Date(1, 4, 2019)),
   ]
+  toogleDetails(index) {
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
   addNewquotes(quotes) {
     let quotesLength = this.quotes.length;
     quotes.id = quotesLength + 1;

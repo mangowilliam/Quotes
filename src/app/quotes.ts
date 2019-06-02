@@ -1,4 +1,7 @@
 export class Quotes {
+  public showDescription: boolean;
+  constructor(public id: number, public quote: string, public author: string, public quoter: string, public Date: Date) {
+    this.showDescription = false
+  }
 
-  constructor(public id: number, public quote: string, public author: string, public quoter: string, public Date: Date) { }
 }//create constructor function and define properties for each instance ofthe class
