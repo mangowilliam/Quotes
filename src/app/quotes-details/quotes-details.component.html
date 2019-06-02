@@ -1,6 +1,10 @@
-<p>{{quotes.quoter}}</p>
-<p>This quote has been in existence for {{quotes.Date|dateCount}} days</p>
-<i title="Up Votes" ng-click="changeVote(vote, 'up')" class="fa fa-arrow-circle-up fa-2x" ng-class="{true:'up', false:''}[vote=='up']"></i>
-<i title="Down Votes" ng-click="changeVote(vote, 'down')" class="fa fa-arrow-circle-down fa-2x" ng-class="{true:'down', false:''}[vote=='down']"></i>
-&nbsp; &nbsp; &nbsp;
-<button class="btn btn-danger" (click)='quotesDelete(true)'> Delete quote </button>
+<div class="container">
+  <div class="jumbotron">
+    <p>{{quotes.quoter}}</p>
+    <p>This quote has been in existence for {{quotes.Date|dateCount}} days</p>
+    <i title="Up Votes" ng-click="upVote()" class="fa fa-arrow-circle-up fa-2x" appVote> {{upvotes}}</i><br>
+    <i title="Down Votes" ng-click="downVote()" class="fa fa-arrow-circle-down fa-2x" appVote>{{downvotes}}</i>
+    <br>
+    <button class="btn btn-danger" (click)='quotesDelete(true)'> Delete quote </button>
+  </div>
+</div>

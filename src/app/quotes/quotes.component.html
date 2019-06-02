@@ -1,11 +1,9 @@
-<h1>Quotes</h1>
 <div class="container">
   <app-quotesform (addquotes)="addNewquotes($event)"></app-quotesform><br>
-  <ul>
-    <div *ngFor='let quotes of quotes; let i = index'>
-      <li>{{quotes.quote}} by {{quotes.author}} on {{quotes.Date|date}}</li>
-      <button class="btn btn-info" (click)='toogleDetails(i)'>view details</button>
-      <app-quotes-details *ngIf="quotes.showDescription" [quotes]='quotes' (isComplete)='deletequotes($event,i)'></app-quotes-details>
-    </div>
-  </ul>
+  <h1>Quotes</h1>
+  <div *ngFor='let quotes of quotes; let i = index'>
+    <h5>{{quotes.quote}} by {{quotes.author}} on {{quotes.Date|date}}</h5>
+    <button id="details" class="btn btn-info" (click)='toogleDetails(i)'>view details</button>
+    <app-quotes-details *ngIf="quotes.showDescription" [quotes]='quotes' (isComplete)='deletequotes($event,i)'></app-quotes-details>
+  </div>
 </div>
