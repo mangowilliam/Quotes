@@ -1,24 +1,16 @@
 <div class="container-fluid">
   <div class="row">
-    <form #quotesForm="ngForm">
+    <form (ngSubmit)="submitquotes()" #quotesForm="ngForm">
       <div class="form-group">
-        <label for="name">Quote</label>
-        <input type="text" required class="form-control" id="quote">
-
+        <label for="quote">Quote</label>
+        <input type="text" class="form-control" id="quote" [(ngModel)]="newquotes.quote" name="quote" #quote="ngModel" required>
       </div>
       <div class="form-group">
 
         <label for="author">Author</label>
-        <input type="text" required class="form-control" id="author">
-
+        <input type="text" class="form-control" id="author" [(ngModel)]="newquotes.author" name="author" #author="ngModel" required>
       </div>
-      <div class="form-group">
-
-        <label for="name">Quoter</label>
-        <input type="text" required class="form-control" id="quoter">
-
-      </div>
-      <button type="submit" class="btn btn-success">ADD</button>
+      <button type="submit" class="btn btn-success" [disabled]="!quotesForm.form.valid">ADD</button>
     </form>
   </div>
 </div>

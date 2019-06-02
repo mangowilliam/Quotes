@@ -9,8 +9,8 @@ import { Quotes } from './quotes';
 export class AppComponent {
   titile = "quotes"
   quotes = [
-    new Quotes('The Way Get Started Is To Quit Talking And Begin Doing.', ' Walt Disney', "mango J", new Date(2019, 3, 30)),
-    new Quotes('Don’t Let Yesterday Take Up Too Much Of Today.', 'Will Rodgers', "Junior M", new Date(2019, 4, 1)),
+    new Quotes(1, 'The Way Get Started Is To Quit Talking And Begin Doing.', ' Walt Disney', "mango J", new Date(3, 30, 2019)),
+    new Quotes(2, 'Don’t Let Yesterday Take Up Too Much Of Today.', 'Will Rodgers', "Junior M", new Date(1, 4, 2019)),
   ]
 
 
