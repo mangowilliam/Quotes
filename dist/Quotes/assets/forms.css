@@ -1,0 +1,82 @@
+.ng-valid[required], .ng-valid.required {
+  border-left: 5px solid #42A948;
+  /* green */
+}
+
+.ng-invalid:not(form) {
+  border-left: 5px solid #a94442;
+  /* red */
+}
+
+body {
+  background-image: url('cards.jpg');
+}
+
+button {
+  padding: 4px;
+  width: 150px;
+  font-variant: small-caps;
+  font-size: 13px;
+}
+
+#details {
+  margin: 0 auto;
+  display: block;
+}
+
+.container-fluid {
+  align-content: center;
+  text-align: center;
+  background-image: url('angular.jpeg');
+  font-size: 16px;
+  margin: auto;
+  color: red;
+}
+
+.jumbotron {
+  align-content: center;
+  text-align: center;
+}
+
+.form-group {
+  width: 33%;
+  float: left;
+  padding: 15px;
+}
+
+h1 {
+  text-align: center;
+  color: red;
+}
+
+h5 {
+  text-align: center;
+  color: white;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer img {
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}

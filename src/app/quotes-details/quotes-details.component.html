@@ -2,8 +2,8 @@
   <div class="jumbotron">
     <p>{{quotes.quoter}}</p>
     <p>This quote has been in existence for {{quotes.Date|dateCount}} days</p>
-    <i title="Up Votes" ng-click="upVote()" class="fa fa-arrow-circle-up fa-2x" appVote></i><br>
-    <i title="Down Votes" ng-click="downVote()" class="fa fa-arrow-circle-down fa-2x" appVote></i>
+    <i title="Up Votes" ng-click="upVote()" class="fa fa-arrow-circle-up fa-2x" appVote> &nbsp;0</i><br>
+    <i title="Down Votes" ng-click="downVote()" class="fa fa-arrow-circle-down fa-2x" appVote> &nbsp;0</i>
     <br>
     <button class="btn btn-danger" (click)='quotesDelete(true)'> Delete quote </button>
   </div>
