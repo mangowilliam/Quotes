@@ -6,4 +6,8 @@
     <button id="details" class="btn btn-info" (click)='toogleDetails(i)'>view details</button>
     <app-quotes-details *ngIf="quotes.showDescription" [quotes]='quotes' (isComplete)='deletequotes($event,i)'></app-quotes-details>
   </div>
+  <div class="footer">
+    Copyright (c) 2019, mango
+    <a href="git.png" id="git" class="">
+  </div>
 </div>
