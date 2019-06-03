@@ -14,6 +14,12 @@ export class QuotesDetailsComponent implements OnInit {
 
   @Input() quotes: Quotes;
   @Output() isComplete = new EventEmitter<boolean>();
+  upvotes() {
+    this.quotes.upvote += 1;
+  }
+  downvotes() {
+    this.quotes.downvote += 1;
+  }
   constructor() { }
 
   ngOnInit() {

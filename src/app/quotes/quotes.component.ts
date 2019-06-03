@@ -8,8 +8,8 @@ import { Quotes } from '../quotes';
 })
 export class QuotesComponent implements OnInit {
   quotes = [
-    new Quotes(1, 'The Way Get Started Is To Quit Talking And Begin Doing.', ' Walt Disney', "mango J", new Date(3, 30, 2019)),
-    new Quotes(2, 'Don’t Let Yesterday Take Up Too Much Of Today.', 'Will Rodgers', "Junior M", new Date(1, 4, 2019)),
+    new Quotes(1, 0, 0, 'The Way To Get Started Is To Quit Talking And Begin Doing.', ' Walt Disney', "mango J", new Date(2019, 4, 30)),
+    new Quotes(2, 0, 0, 'Don’t Let Yesterday Take Up Too Much Of Today.', 'Will Rodgers', "Junior M", new Date(2019, 4, 20)),
   ]
   toogleDetails(index) {
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
@@ -21,6 +21,9 @@ export class QuotesComponent implements OnInit {
     this.quotes.push(quotes)
 
   }
+  upvote = 0;
+  downvote = 0;
+
 
   deletequotes(isComplete, index) {
     if (isComplete) {

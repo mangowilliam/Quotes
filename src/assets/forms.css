@@ -46,16 +46,17 @@ button {
 
 h1 {
   text-align: center;
-  color: red;
+  color: white;
 }
 
 h5 {
   text-align: center;
-  color: white;
+  color: red;
 }
 
 .footer {
   text-align: center;
+  color: red;
 }
 
 .footer img {
