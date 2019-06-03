@@ -19,16 +19,10 @@ export class QuotesComponent implements OnInit {
     quotes.id = quotesLength + 1;
     quotes.Date = new Date(quotes.Date)
     this.quotes.push(quotes)
-
   }
-  upvote = 0;
-  downvote = 0;
-
-
   deletequotes(isComplete, index) {
     if (isComplete) {
       let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].quote}`)
-
       if (toDelete) {
         this.quotes.splice(index, 1)
       }
